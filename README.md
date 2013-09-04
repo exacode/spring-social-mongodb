@@ -2,7 +2,7 @@ Spring social persistence for MongoDB
 =====================================
 
 Spring social persistence layer for MongoDB.
-Connects (Spring social)[http://www.springsource.org/spring-social] with (MongoDB)[http://www.mongodb.org/].
+Connects [Spring social](http://www.springsource.org/spring-social) with [MongoDB](http://www.mongodb.org/).
 
 Thanks to
 ---------
