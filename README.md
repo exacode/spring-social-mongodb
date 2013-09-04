@@ -7,8 +7,8 @@ Connects (Spring social)[http://www.springsource.org/spring-social] with (MongoD
 Thanks to
 ---------
 
-- (Blog post)[http://harmonicdevelopment.tumblr.com/post/13613051804/adding-spring-social-to-a-spring-mvc-and-spring] about implementing spring social persistence layer
-- (GitHub repository)[https://github.com/CarloMicieli/spring-social-mongo] that this project extends with: removal of depricated query methods, removal of commented code lines, added layers separation
+- [Blog post](http://harmonicdevelopment.tumblr.com/post/13613051804/adding-spring-social-to-a-spring-mvc-and-spring) about implementing spring social persistence layer
+- [GitHub repository](https://github.com/CarloMicieli/spring-social-mongo) that this project extends with: removal of depricated query methods, removal of commented code lines, added layers separation
 
 
 Maven repository
