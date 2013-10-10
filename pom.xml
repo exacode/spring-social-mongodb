@@ -1,28 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.social</groupId>
+	<groupId>net.exacode.spring.social</groupId>
 	<artifactId>spring-social-mongodb</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 
 	<name>Spring Social MongoDB</name>
 	<description>MongoDB persistence layer for Spring Social</description>
 
 	<distributionManagement>
 		<repository>
-			<id>mendlik-releases</id>
-			<url>https://github.com/mendlik/mvn-repo/raw/master/releases</url>
+			<id>exacode-releases</id>
+			<url>https://github.com/exacode/mvn-repo/raw/master/releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>mendlik-snapshots</id>
-			<url>https://github.com/mendlik/mvn-repo/raw/master/snapshots</url>
+			<id>exacode-snapshots</id>
+			<url>https://github.com/exacode/mvn-repo/raw/master/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:git@github.com:mendlik/spring-social-mongodb.git</connection>
-		<developerConnection>scm:git:git@github.com:mendlik/spring-social-mongodb.git</developerConnection>
-		<url>http://github.com/mendlik/spring-social-mongodb</url>
+		<connection>scm:git:git@github.com:exacode/spring-social-mongodb.git</connection>
+		<developerConnection>scm:git:git@github.com:exacode/spring-social-mongodb.git</developerConnection>
+		<url>http://github.com/exacode/spring-social-mongodb</url>
 	</scm>
 
 	<properties>

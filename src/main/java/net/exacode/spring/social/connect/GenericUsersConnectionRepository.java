@@ -1,8 +1,15 @@
-package org.springframework.social.connect;
+package net.exacode.spring.social.connect;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
+
+import org.springframework.social.connect.Connection;
+import org.springframework.social.connect.ConnectionFactoryLocator;
+import org.springframework.social.connect.ConnectionKey;
+import org.springframework.social.connect.ConnectionRepository;
+import org.springframework.social.connect.ConnectionSignUp;
+import org.springframework.social.connect.UsersConnectionRepository;
 
 /**
  * {@link UsersConnectionRepository} that abstracts from persistence layer.

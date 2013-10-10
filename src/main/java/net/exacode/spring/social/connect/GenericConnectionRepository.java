@@ -1,4 +1,4 @@
-package org.springframework.social.connect;
+package net.exacode.spring.social.connect;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,6 +8,14 @@ import java.util.Set;
 
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.social.connect.Connection;
+import org.springframework.social.connect.ConnectionData;
+import org.springframework.social.connect.ConnectionFactoryLocator;
+import org.springframework.social.connect.ConnectionKey;
+import org.springframework.social.connect.ConnectionRepository;
+import org.springframework.social.connect.DuplicateConnectionException;
+import org.springframework.social.connect.NoSuchConnectionException;
+import org.springframework.social.connect.NotConnectedException;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 

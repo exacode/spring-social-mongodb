@@ -1,4 +1,4 @@
-package org.springframework.social.connect.mongo;
+package net.exacode.spring.social.connect.mongo;
 
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
@@ -8,6 +8,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
+
+import net.exacode.spring.social.connect.SocialConnectionDao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
@@ -19,7 +21,6 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.social.connect.Connection;
 import org.springframework.social.connect.ConnectionKey;
-import org.springframework.social.connect.SocialConnectionDao;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 
@@ -46,7 +47,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Returns the max connection rank for the user and the provider.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getMaxRank(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getMaxRank(java.lang.String,
 	 *      java.lang.String)
 	 */
 	@Override
@@ -68,7 +69,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Create a new connection for the user.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#create(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#create(java.lang.String,
 	 *      org.springframework.social.connect.Connection, int)
 	 */
 	@Override
@@ -82,7 +83,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Update a connection.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#update(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#update(java.lang.String,
 	 *      org.springframework.social.connect.Connection)
 	 */
 	@Override
@@ -111,7 +112,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Remove a connection.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#remove(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#remove(java.lang.String,
 	 *      org.springframework.social.connect.ConnectionKey)
 	 */
 	@Override
@@ -126,7 +127,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Remove all the connections for a user on a provider.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#remove(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#remove(java.lang.String,
 	 *      java.lang.String)
 	 */
 	@Override
@@ -141,7 +142,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Return the primary connection.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getPrimaryConnection(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getPrimaryConnection(java.lang.String,
 	 *      java.lang.String)
 	 */
 	@Override
@@ -157,7 +158,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Get the connection for user, provider and provider user id.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getConnection(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getConnection(java.lang.String,
 	 *      java.lang.String, java.lang.String)
 	 */
 	@Override
@@ -174,7 +175,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Get all the connections for an user id.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getConnections(java.lang.String)
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getConnections(java.lang.String)
 	 */
 	@Override
 	public List<Connection<?>> getConnections(String userId) {
@@ -188,7 +189,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Get all the connections for an user id on a provider.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getConnections(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getConnections(java.lang.String,
 	 *      java.lang.String)
 	 */
 	@Override
@@ -204,7 +205,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Get all the connections for an user.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getConnections(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getConnections(java.lang.String,
 	 *      org.springframework.util.MultiValueMap)
 	 */
 	@Override
@@ -239,7 +240,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Get the user ids on the provider.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getUserIds(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getUserIds(java.lang.String,
 	 *      java.util.Set)
 	 */
 	@Override
@@ -264,7 +265,7 @@ public class MongoConnectionDao implements SocialConnectionDao {
 	/**
 	 * Get the user ids on the provider with a given provider user id.
 	 * 
-	 * @see org.springframework.social.connect.SocialConnectionDao#getUserIds(java.lang.String,
+	 * @see net.exacode.spring.social.connect.SocialConnectionDao#getUserIds(java.lang.String,
 	 *      java.lang.String)
 	 */
 	@Override

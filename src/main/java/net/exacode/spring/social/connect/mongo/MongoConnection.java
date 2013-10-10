@@ -1,4 +1,4 @@
-package org.springframework.social.connect.mongo;
+package net.exacode.spring.social.connect.mongo;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

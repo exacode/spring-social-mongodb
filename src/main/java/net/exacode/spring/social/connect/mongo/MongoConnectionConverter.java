@@ -1,4 +1,4 @@
-package org.springframework.social.connect.mongo;
+package net.exacode.spring.social.connect.mongo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.encrypt.TextEncryptor;
