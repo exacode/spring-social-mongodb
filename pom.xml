@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.exacode.spring.social</groupId>
 	<artifactId>spring-social-mongodb</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>Spring Social MongoDB</name>
 	<description>MongoDB persistence layer for Spring Social</description>
